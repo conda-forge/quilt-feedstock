@@ -1,8 +1,9 @@
 {% set name = "quilt" %}
+{% set pname = "quilt3" %}
 {% set version = "3.0.6" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ pname|lower }}
   version: {{ version }}
 
 source:
@@ -10,7 +11,7 @@ source:
   sha256: 4d9414b0f522211539cb6a980409a05779369c0c5ddc598187fc5433490971e7
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py2k]
   script: 
       - cd api/python

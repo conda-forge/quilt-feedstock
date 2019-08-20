@@ -1,5 +1,5 @@
-About quilt
-===========
+About quilt3
+============
 
 Home: https://quiltdata.com/
 
@@ -93,27 +93,27 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-quilt-green.svg)](https://anaconda.org/conda-forge/quilt) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/quilt.svg)](https://anaconda.org/conda-forge/quilt) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/quilt.svg)](https://anaconda.org/conda-forge/quilt) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/quilt.svg)](https://anaconda.org/conda-forge/quilt) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-quilt3-green.svg)](https://anaconda.org/conda-forge/quilt3) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/quilt3.svg)](https://anaconda.org/conda-forge/quilt3) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/quilt3.svg)](https://anaconda.org/conda-forge/quilt3) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/quilt3.svg)](https://anaconda.org/conda-forge/quilt3) |
 
-Installing quilt
-================
+Installing quilt3
+=================
 
-Installing `quilt` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `quilt3` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `quilt` can be installed with:
+Once the `conda-forge` channel has been enabled, `quilt3` can be installed with:
 
 ```
-conda install quilt
+conda install quilt3
 ```
 
-It is possible to list all of the versions of `quilt` available on your platform with:
+It is possible to list all of the versions of `quilt3` available on your platform with:
 
 ```
-conda search quilt --channel conda-forge
+conda search quilt3 --channel conda-forge
 ```
 
 
@@ -155,17 +155,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating quilt-feedstock
-========================
+Updating quilt3-feedstock
+=========================
 
-If you would like to improve the quilt recipe or build a new
+If you would like to improve the quilt3 recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/quilt-feedstock are
+Note that all branches in the conda-forge/quilt3-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.

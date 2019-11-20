@@ -1,6 +1,6 @@
 {% set name = "quilt" %}
 {% set pname = "quilt3" %}
-{% set version = "3.0.7" %}
+{% set version = "3.1.5" %}
 
 package:
   name: {{ pname|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/quiltdata/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: f4552a12c663c3e7d8f7b6d7cf5957cd60aff7fc89ba5464e2b97b826d07aa24
+  sha256: 3198a70b34082ace1360555a42363fae0891066edfdd046ccea67fac189a6150
 
 build:
   number: 0
@@ -26,17 +26,17 @@ requirements:
     - appdirs >=1.4.0
     - aws-requests-auth >=0.4.2
     - boto3 >=1.8.0 
-    - elasticsearch 6.3.1
     - jsonlines 1.2.0
     - packaging >=16.8
     - pandas >=0.19.2
-    - pyarrow 0.13               # as of 7/5/19: linux/circleci bugs on 0.14
+    - pyarrow >=0.14.1               # as of 7/5/19: linux/circleci bugs on 0.14
     - requests >=2.12.4
     - urllib3 1.24               # required by requests
     - ruamel.yaml <=0.15.70
     - tqdm >=4.26.0
     - xattr >=0.9.6  # [not win]
     - humanize
+    - python-dateutil <=2.8.0
 
 test:
   imports:

@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/quiltdata/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 3198a70b34082ace1360555a42363fae0891066edfdd046ccea67fac189a6150
+  sha256: 547310b66eaf428cc1f6e9c49ebe289e5eb2e05a0ca1cbd362195e2b97b011a3
 
 build:
   number: 0

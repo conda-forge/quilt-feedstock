@@ -1,6 +1,6 @@
 {% set name = "quilt" %}
 {% set pname = "quilt3" %}
-{% set version = "3.1.10" %}
+{% set version = "3.1.11" %}
 
 package:
   name: {{ pname|lower }}
@@ -8,14 +8,14 @@ package:
 
 source:
   url: https://github.com/quiltdata/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 350e735b5fd01309127d838eaf4a2245d2036b1bb8a204c458582458b958239b
+  sha256: 8833bde71d53f0b970a9941350ad3da79d281537f18bb1b289f5f0081d0eb7ce
 
 build:
   number: 0
   skip: true  # [py2k]
-  script: 
-      - cd api/python
-      - "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script:
+    - cd api/python
+    - {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -25,7 +25,7 @@ requirements:
     - python
     - appdirs >=1.4.0
     - aws-requests-auth >=0.4.2
-    - boto3 >=1.8.0 
+    - boto3 >=1.8.0
     - flask
     - flask_cors
     - flask_json

@@ -25,7 +25,7 @@ requirements:
     - python
     - appdirs >=1.4.0
     - aws-requests-auth >=0.4.2
-    - boto3 >=1.8.0
+    - boto3 >=1.10.0
     - flask
     - flask_cors
     - flask_json
@@ -37,9 +37,11 @@ requirements:
     - requests >=2.12.4
     - urllib3 1.24                   #  required by requests
     - requests-futures ==1.0.0
-    - ruamel.yaml >=0.15.78
+    - pyyaml >=5.3
     - tqdm >=4.26.0
     - dnspython >=1.16.0
+    - tenacity >=5.1.1
+
 
 
 test:

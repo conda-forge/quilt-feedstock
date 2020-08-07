@@ -11,7 +11,7 @@ source:
   sha256: b54d59fbe5faefc789e4e5d4fcd0f92a0f8f3955aabb607c22df04e44b399294
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - cd api/python

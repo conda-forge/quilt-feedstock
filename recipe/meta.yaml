@@ -11,8 +11,8 @@ source:
   sha256: b54d59fbe5faefc789e4e5d4fcd0f92a0f8f3955aabb607c22df04e44b399294
 
 build:
-  number: 0
-  skip: true  # [py2k]
+  number: 1
+  noarch: python
   script:
     - cd api/python
     - {{ PYTHON }} -m pip install . --no-deps -vv
@@ -42,15 +42,17 @@ requirements:
     - dnspython >=1.16.0
     - tenacity >=5.1.1
 
-
-
 test:
   imports:
     - quilt3
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://quiltdata.com/
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: 'Quilt: where data comes together'

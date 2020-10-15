@@ -5,9 +5,11 @@ Home: https://quiltdata.com/
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/quilt-feedstock/blob/master/LICENSE.txt)
 
 Summary: Quilt: where data comes together
+
+Development: https://github.com/quiltdata/quilt
 
 Quilt is infrastructure for data-driven teams to store, version, deploy and iterate on models and data.
 Data in Quilt are visual, discoverable, and reproducible.

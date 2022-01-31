@@ -11,7 +11,7 @@ source:
   sha256: f6381df5ddfc95dadf31f2c5c5f572ffb09bc32164f56b44db731c8d153fcd3d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - cd api/python
@@ -39,7 +39,7 @@ requirements:
     - tqdm >=4.32
     - dnspython >=1.16.0
     - tenacity >=5.1.1
-    - jsonschema ==3.*
+    - 'jsonschema >=3,<5'
 
 test:
   imports:

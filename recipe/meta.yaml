@@ -1,6 +1,6 @@
 {% set name = "quilt" %}
 {% set pname = "quilt3" %}
-{% set version = "4.0.0" %}
+{% set version = "4.1.0" %}
 
 package:
   name: {{ pname|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/quiltdata/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: f6381df5ddfc95dadf31f2c5c5f572ffb09bc32164f56b44db731c8d153fcd3d
+  sha256: ae1de5884d9585b2cfb2c1ee3af8b30df19468db655917436c028bcdda118166
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - cd api/python
@@ -39,7 +39,7 @@ requirements:
     - tqdm >=4.32
     - dnspython >=1.16.0
     - tenacity >=5.1.1
-    - 'jsonschema >=3,<5'
+    - jsonschema >=3,<5
 
 test:
   imports:

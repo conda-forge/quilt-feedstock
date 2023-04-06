@@ -1,6 +1,6 @@
 {% set name = "quilt" %}
 {% set pname = "quilt3" %}
-{% set version = "5.2.0" %}
+{% set version = "5.2.1" %}
 
 package:
   name: {{ pname|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/quiltdata/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: cbe0684a444a65d4650636cbbe62d1a431a406ca21250e15f48590fbf284796c
+  sha256: 39bc405e4e51ab3e73959d832754bc732c845a2962d068bac5deaa6cd6e07939
 
 build:
   number: 0

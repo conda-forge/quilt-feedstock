@@ -1,6 +1,6 @@
 {% set name = "quilt" %}
 {% set pname = "quilt3" %}
-{% set version = "5.4.0" %}
+{% set version = "6.1.0" %}
 
 package:
   name: {{ pname|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/quiltdata/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 2179750d62ea8b38249b9eda3a70165a180273b666c1d9887e7134312e3395ca
+  sha256: 15cb6d2814c46a81bf1aad7d50056b61a46cdad2fe117070b6184c42829ea13b
 
 build:
   number: 0
@@ -19,10 +19,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
+    - setuptools >=61.0
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
     - platformdirs >=2
     - aws-requests-auth >=0.4.2
     - boto3 >=1.10.0
@@ -33,12 +34,14 @@ requirements:
     - tqdm >=4.32
     - tenacity >=5.1.1
     - jsonschema >=3,<5
+    - pydantic >=2.0.0,<3.0.0
 
 test:
   imports:
     - quilt3
   requires:
     - pip
+    - setuptools >=61.0
   commands:
     - pip check
 

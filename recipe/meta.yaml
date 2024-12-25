@@ -11,7 +11,7 @@ source:
   sha256: d0be9f000e64b204f9de81be398bdfb6b70d265e0b5e9853b34e1529ac7ac43f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - cd api/python
@@ -19,11 +19,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools >=61.0
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - platformdirs >=2
     - aws-requests-auth >=0.4.2
     - boto3 >=1.10.0
@@ -42,6 +42,7 @@ test:
   requires:
     - pip
     - setuptools >=61.0
+    - python {{ python_min }}
   commands:
     - pip check
 
